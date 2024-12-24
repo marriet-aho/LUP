@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Registration</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/Screenshot (23).png" alt="" width="600px" height="500px">
+        <header>
+            <h1>West Africa Sub. Reginal Leadership Workshop</h1>
+            <p>Register now to be part of this life-changing event!</p>
+        </header>
+        <form id="registration-form">
+            <label for="first-name">First Name </label>
+            <input type="text" id="first-name" name="first-name" required placeholder="enter your first name">
+
+            <label for="last-name">Last Name </label>
+            <input type="text" id="last-name" name="last-name" required placeholder="enter your last name">
+
+            <label for="email">Email </label>
+            <input type="email" id="email" name="email" required placeholder="enter your email example@gmail.com">
+
+            <label for="phone">Phone </label>
+            <input type="tel" id="phone" name="phone" required placeholder="input your number">
+
+            <label for="attendance-mode">Preferred Mode of Attendance *</label>
+            <select id="attendance-mode" name="attendance-mode" required>
+                <option value="">Select</option>
+                <option value="virtual">Virtual</option>
+                <option value="in-person">In-Person</option>
+            </select>
+
+            <label for="category">What Category Do You Belong To? </label>
+            <select id="category" name="category" required>
+                <option value="">Select</option>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="previous-attendance">Have You Attended the West Africa Sub. Reginal Leadership Workshop Conference Before? </label>
+            <select id="previous-attendance" name="previous-attendance" required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="referral">How Did You Hear About the Conference? *</label>
+            <input type="text" id="referral" name="referral" required>
+
+            <label for="state">State/Region *</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="country">Country </label>
+<select id="country" name="country" type="text" required>
+    <option value="">Select a Country</option>
+</select>
+
+
+            <label for="ministry">Ministry</label>
+            <!-- <label for="church">Church Name</label> -->
+<select id="church" name="church"  type="text" required>
+    <option value="">Select a Church</option>
+</select>
+
+
+            <label for="member">Are You a Member of The Equip Ghana? </label>
+            <select id="member" name="member" required>
+                <option value="">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
